@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(37, 37, 37);
+}
+
+.font-poppins {
+    font-family: "Poppins", sans-serif;
+}
+
+.font-mont {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.brand-logo {
+    width: 200px;
+}
+
+footer {
+    background-color: #eaffd4;
+    padding: 50px 0;
+    color: rgb(37, 37, 37);
+}
+
+footer ul li a,
+.footer-links-others a {
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+    margin-right: 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.social-links a:nth-child(4) {
+    color: green;
+}
+
+.social-links a:nth-child(3) {
+    color: red;
+}
+
+.social-links a:nth-child(2) {
+    color: rgb(252, 123, 145);
+}
+
+.social-links a:nth-child(1) {
+    color: #4267B2;
+}
+
+.social-links a:hover {
+    scale: 1.1;
+}
+
+.divider {
+    height: 4px;
+    width: 100%;
+    background-color: #b7b5b5;
+    border-radius: 50%;
+}
+
+.blog-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-card::after {
+    content: "";
+    height: 70px;
+    width: 110%;
+    background: linear-gradient(rgba(255, 255, 255, 0.628), white);
+    filter: blur(15px);
+    position: absolute;
+    top: 44%;
+    left: -10px;
+}
+
+.collection-card {
+    height: 300px;
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.collection-card p {
+    color: white;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-weight: 700;
+    margin: 0;
+}
+
+.collection-card a,
+.best-selling-products a:last-child,
+.about-content h2 {
+    text-decoration: none;
+    background: linear-gradient(90deg, #a1c134, #325624);
+    border: 1px solid white;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #ff4d4d;
+    transition: 0.3s;
+}
+
+.sub-nav li a,
+.main-nav li a {
+    text-decoration: none;
+    color: black; 
+    margin-right: 15px; 
+    padding: 15px auto                                                                              ; 
+}
+
+.sub-nav{
+gap: 15px;
+}
+
+.product-card p span {
+    color: #a1c134;
+    font-weight: 700;
+}
+
+.slogan {
+    color: #a1c134;
+}
+
+
+.collection-card.collection-card-1 {
+    background: linear-gradient(rgba(255, 255, 255, 0.377), rgba(10, 10, 10, 0.651)), url(../images/ddd7f34531.jpg);
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    background-position: center;
+}
+
+.collection-card.collection-card-2 {
+    background: linear-gradient(rgba(255, 255, 255, 0.377), rgba(10, 10, 10, 0.651)), url(../images/19cb9ba695.jpg);
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    background-position: center;
+}
+
+.collection-card.collection-card-3 {
+    background: linear-gradient(rgba(255, 255, 255, 0.377), rgba(10, 10, 10, 0.651)), url(../images/45175f3585.jpg);
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    background-position: center;
+}
+
+.collection-card.collection-card-4 {
+    background: linear-gradient(rgba(255, 255, 255, 0.377), rgba(10, 10, 10, 0.651)), url(../images/888ad75236.jpg);
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    background-position: center;
+}
+
+.collection-card.collection-card-5 {
+    background: linear-gradient(rgba(255, 255, 255, 0.377), rgba(10, 10, 10, 0.651)), url(../images/6a9b84b814.jpg);
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    background-position: center;
+}
+
+.collection-card.collection-card-6 {
+    background: linear-gradient(rgba(255, 255, 255, 0.377), rgba(10, 10, 10, 0.651)), url(../images/freepik__enhance__26323.jpeg);
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    background-position: center;
+}
+
+.collection-card:hover {
+    background-position: center;
+}
+
+
+.blog-card:hover {
+    border: 1px solid whitesmoke;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.blog-card img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}

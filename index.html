@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body class="font-poppins">
@@ -37,40 +38,52 @@
         </nav>
 
     </header>
-    <section class="hero">
-        <img src="./assets/images/banner.png" alt="banner" class="img-fluid">
+    <section class="hero animate__animated animate__fadeIn">
+        <div class="row container-fluid mx-auto">
+            <div class="col-md-6 d-md-block d-none">
+                <img src="./assets/images/trishna.png" alt="logo-trishna"
+                    class="img-fluid animate__animated animate__flipInY animate__delay-1s">
+            </div>
+            <div class="col-md-6 text-end">
+                <p class="slogan font-mont text-white my-3 fs-3 animate__animated animate__fadeInUp animate__delay-1s">
+                    Flavors that Inspire, <br>
+                    Freshness You Desire!</p>
+            </div>
+        </div>
+
+        <!-- <img src="./assets/images/banner.png" alt="banner" class="img-fluid"> -->
     </section>
     <section class="best-selling-products py-5  text-center">
         <h2 class="fw-bolder fs-1 mb-4">BEST SELLING PRODUCTS</h2>
         <p>Grab our best products to brighten your day</p>
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 " data-aos="fade-up">
                     <div class="product-card text-center">
                         <img src="./assets/images/T Papad.png" alt="product-image" class="img-fluid">
                         <p><span>3D Papad</span> 1kg</p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="product-card text-center">
-                        <img src="./assets/images/2.png" alt="product-image" class="img-fluid">
-                        <p><span>PASTA </span> 200g</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-up">
                     <div class="product-card text-center">
                         <img src="./assets/images/4.png" alt="product-image" class="img-fluid">
-                        <p><span>Roasted CHOLA</span> 200g</p>
+                        <p><span>PASTA </span> 1kg</p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-up">
+                    <div class="product-card text-center">
+                        <img src="./assets/images/009.png" alt="product-image" class="img-fluid">
+                        <p><span>Suji</span> 200g</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up">
                     <div class="product-card text-center">
                         <img src="./assets/images/5.png" alt="product-image" class="img-fluid">
                         <p><span>VERMICELLI</span> 200g</p>
                     </div>
                 </div>
             </div>
-            <a href="#" class="text-capitalize my-3 d-inline-block">view all</a>
+            <a href="products.html" class="text-capitalize my-3 d-inline-block">view all</a>
         </div>
     </section>
     <section class="about-us">
@@ -83,18 +96,10 @@
                 </div>
                 <div class="col-md-7 about-content">
                     <h2 class="p-3 fs-4">ABOUT US</h2>
-                    <p class="fs-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                        diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                        aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
-                        ea commodo consequat. Duis autem vel eum iriure dolor in
-                        hendrerit in vulputate velit esse molestie consequat, vel illum
-                        dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto
-                        odio dignissim qui blandit praesent luptatum zzril delenit augue
-                        duis dolore te feugait nulla facilisi.
-                        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed
-                        diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                        aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                    <p class="fs-5">Trishna is a brand dedicated to delivering high-quality, flavorful, and nutritious
+                        food products. With a focus on authenticity and innovation, we bring a perfect blend of
+                        tradition and taste to every kitchen. Our commitment to quality ensures that every product is
+                        crafted with the finest ingredients, making every meal delicious and wholesome.
                     </p>
                 </div>
             </div>
@@ -102,18 +107,24 @@
         </div>
     </section>
     <section class="many-more">
-        <div class="container">
+        <div class="container-fluid p-0 overflow-hidden">
             <div class="row ">
                 <div class="col-md-6">
                     <img src="./assets/images/all-products.png" alt="trishna-product" class="img-fluid">
                 </div>
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-md-6 p-3">
+                        <div class="col-md-6 p-3  text-center">
                             <img src="./assets/images/high logo png-01.png" alt="logo" class="img-fluid">
+                            <h2 class="fw-bolder">High Quality</h2>
+                            <p>Dedicated to maintaining
+                                product quality</p>
                         </div>
-                        <div class="col-md-6 p-3">
+                        <div class="col-md-6 p-3 text-center">
                             <img src="./assets/images/Hygienic logo png-01.png" alt="logo" class="img-fluid">
+                            <h2 class="fw-bolder">Hygienic</h2>
+                            <p>Maintain hygiene
+                                standards</p>
                         </div>
                     </div>
                 </div>
@@ -169,39 +180,53 @@
             <div class="row">
                 <div class="col-md-4 mb-3">
                     <div class="blog-card">
-                        <img src="./assets/images/labor-day.jpg" alt="blog-image" class="img-fluid mb-3">
-                        <h2 class="fs-4">Happy Labour Day</h2>
-                        <p class="date-blog">May 02,2024</p>
-                        <p>May Day echoes the harmony of labor and industry, a
-                            symphony of hard work and dedication.
-                            Happy Labour Day</p>
+                        <div class="blog-card-img">
+                            <img src="./assets/images/labor-day.jpg" alt="blog-image" class="img-fluid mb-3">
+                        </div>
+                        <div class="p-3">
+                            <h2 class="fs-4">Happy Labour Day</h2>
+                            <p class="date-blog">May 02,2024</p>
+                            <p>May Day echoes the harmony of labor and industry, a
+                                symphony of hard work and dedication.
+                                Happy Labour Day</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="blog-card">
-                        <img src="./assets/images/all-products.png" alt="blog-image" class="img-fluid mb-3">
-                        <h2 class="fs-4">New Product</h2>
-                        <p class="date-blog">May 02,2024</p>
-                        <p>May Day echoes the harmony of labor and industry, a
-                            symphony of hard work and dedication.
-                            Happy Labour Day</p>
+                        <div class="blog-card-img">
+                            <img src="./assets/images/all-products.png" alt="blog-image" class="img-fluid mb-3">
+                        </div>
+                        <div class="p-3">
+                            <h2 class="fs-4">New Product</h2>
+                            <p class="date-blog">May 02,2024</p>
+                            <p>May Day echoes the harmony of labor and industry, a
+                                symphony of hard work and dedication.
+                                Happy Labour Day</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="blog-card">
-                        <img src="./assets/images/all-products.png" alt="blog-image" class="img-fluid mb-3">
-                        <h2 class="fs-4">Lorem Ipsum</h2>
-                        <p class="date-blog">May 02,2024</p>
-                        <p>May Day echoes the harmony of labor and industry, a
-                            symphony of hard work and dedication.
-                            Happy Labour Day</p>
+                        <div class="blog-card-img">
+                            <img src="./assets/images/all-products.png" alt="blog-image" class="img-fluid mb-3">
+                        </div>
+                        <div class="p-3">
+                            <h2 class="fs-4">Lorem Ipsum</h2>
+                            <p class="date-blog">May 02,2024</p>
+                            <p>May Day echoes the harmony of labor and industry, a
+                                symphony of hard work and dedication.
+                                Happy Labour Day</p>
+                        </div>
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="position-relative">
+        <a href="#" class="floating-wapp animate__animated animate__pulse animate__infinite"><i
+                class="ri-whatsapp-fill"></i></a>
         <div class="container text-dark">
             <div class="row pb-4">
                 <div class="col-md-5 pe-5">
@@ -230,17 +255,19 @@
                 <div class="col-md-4">
                     <p class="fs-4 fw-bold">Get In Touch</p>
                     <ul class="list-unstyled">
-                        <li class="fw-bold fs-5"><a href="#">Customer Care :
-                            </a></li>
+                        <li class="fw-bold fs-5">Customer Care :
+                        </li>
                         <li><a href="#">+91 7478292838</a></li>
-                        <li class="fw-bold fs-5"><a href="#">Email :</a></li>
+                        <li class="fw-bold fs-5">Email :</li>
                         <li><a href="#">care@dipankaragrofood.com</a></li>
                     </ul>
                 </div>
             </div>
             <div class="divider"></div>
             <div class="copyright d-md-flex justify-content-between py-3">
-                <p>Web Development & Designed by <span class="fw-bolder">fairbrain</span> (all rights reserved)</p>
+                <p>Web Development & Designed by <a href="https://fairbrain.in/" class="text-decoration-none"><span
+                            class="fw-bolder">fairbrain</span></a> (all rights
+                    reserved)</p>
                 <div class="footer-links-others">
                     <a href="#">Terms</a>
                     <a href="#">Privacy</a>
@@ -254,6 +281,10 @@
         crossorigin="anonymous"></script>
 
     <script src="./assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

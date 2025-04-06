@@ -1,10 +1,14 @@
+Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".ri-menu-4-fill"); // Menu icon
     const closeBtn = document.querySelector(".close-btn"); // Close button
     const mainNav = document.querySelector(".main-nav"); // Navigation menu
 
     console.log(menuToggle);
-    
+
 
     // Function to open menu
     menuToggle.addEventListener("click", function () {

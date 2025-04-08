@@ -186,7 +186,7 @@
 .product-item:hover .image-2,
 .product-item:hover .image-3,
 .product-item:hover .image-4,
-.product-item:hover .image-5{
+.product-item:hover .image-5 {
     animation: bounce 1s infinite;
     animation-delay: 0.5s;
 }
@@ -212,6 +212,11 @@
 
 .font-mont {
     font-family: "Montserrat", sans-serif;
+}
+
+.main-nav {
+    background-color: #e9ffd3;
+    border-radius: 30px 0 0 30px;
 }
 
 .hero {
@@ -339,9 +344,28 @@ footer ul li a:hover,
 .main-nav li a {
     text-decoration: none;
     color: black;
-    margin-right: 15px;
+    margin-right: 35px;
     padding: 15px auto;
+    position: relative;
 }
+
+.main-nav li a.active::after {
+    content: "\ea4d";
+    /* Unicode for ri-arrow-right-s-fill */
+    font-family: "remixicon";
+    /* Ensure Remix Icon font is loaded */
+    font-size: 16px;
+    /* Adjust as needed */
+    color: #a1c134;
+    position: absolute;
+
+}
+
+.main-nav li a.active{
+    color: #a1c134;
+    border-bottom: 2px solid #a1c134;
+}
+
 
 .many-more {
     background: #f9ffe4;

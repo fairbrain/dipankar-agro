@@ -230,6 +230,15 @@ body{
     padding-top: 120px;
 }
 
+@media(max-width: 768px) {
+    .hero {
+        background: url(../images/banner.png) no-repeat top/cover;
+        min-height: 300px;
+        width: 100%;
+        padding-top: 50px;
+    }
+}
+
 .brand-logo {
     width: 250px;
 }

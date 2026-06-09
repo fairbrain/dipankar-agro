@@ -18,8 +18,18 @@
 <body class="font-poppins">
 
     <header class="d-flex justify-content-between align-items-center py-lg-3 sticky-top bg-white">
-        <a href="index.html" class="px-lg-5 px-lg-3 p-2"><img src="./assets/images/DP logo png-01.png"
-                alt="dipankar-logo" class="brand-logo"></a>
+        <a href="index.html" class="px-lg-5 px-lg-3 p-2">
+            <div class="logo-flip-container brand-logo">
+                <div class="logo-flip-card">
+                    <div class="logo-front">
+                        <img src="./assets/images/DP logo png-01.png" alt="dipankar-logo" class="logo-img">
+                    </div>
+                    <div class="logo-back">
+                        <img src="./assets/images/trishna.png" alt="trishna-logo" class="logo-img">
+                    </div>
+                </div>
+            </div>
+        </a>
         <nav>
             <ul
                 class="sub-nav list-unstyled d-flex mb-2 px-lg-5 px-md-4 px-2 align-items-center justify-content-end m-0">
@@ -52,82 +62,300 @@
                     <p class="m-0">Products</p>
                     <i class="ri-arrow-right-line"></i>
                 </div>
-                <div class="product-listing row py-5 my-5 justify-content-center">
-                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center">
+                <div class="category-tabs d-flex justify-content-center flex-wrap gap-2 my-4">
+                    <button class="btn tab-btn active" data-filter="all">ALL</button>
+                    <button class="btn tab-btn" data-filter="groceries">GROCERIES</button>
+                    <button class="btn tab-btn" data-filter="snacks">SNACKS & NAMKEEN</button>
+                    <button class="btn tab-btn" data-filter="edible-oil">EDIBLE OIL</button>
+                </div>
+
+                <div class="product-listing row py-5 my-3 justify-content-center">
+                    <!-- ================= GROCERIES ================= -->
+                    <!-- Soya Chunks -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="groceries">
                         <div class="podium position-relative">
                             <img src="./assets/images/podium.png" alt="podium" class="img-fluid podium-img">
-                            <img src="./assets/images/imageProducts/Soya 1Kg.png" alt="product-1"
-                                class="image-1 product-img">
-                            <img src="./assets/images/imageProducts/Soya 100 gm.png" alt="product-1"
-                                class="image-2 product-img">
-                            <img src="./assets/images/imageProducts/Mini Soya Chunks.png" alt="product-1"
-                                class="image-3 product-img">
+                            <img src="./assets/images/groceries/Soya 1Kg.png" alt="Soya Chunks 1Kg" class="image-1 product-img">
+                            <img src="./assets/images/groceries/Mini Soya Chunks.png" alt="Mini Soya Chunks" class="image-3 product-img">
                         </div>
                         <h3 class="fs-6 fw-bold">SOYA CHUNKS & MINI SOYA CHUNKS</h3>
-                        <p class="text-secondary">60gm & 1kg</p>
+                        <p class="text-secondary">60g, 200g & 1kg</p>
                     </div>
-                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center">
+                    <!-- Pasta -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="groceries">
                         <div class="podium position-relative">
                             <img src="./assets/images/podium.png" alt="podium" class="img-fluid podium-img">
-                            <img src="./assets/images/imageProducts/Pasta 1KG.png" alt="product-1"
-                                class="image-1 product-img">
-                            <img src="./assets/images/imageProducts/Pasta 100gm.png" alt="product-1"
-                                class="image-4 product-img">
+                            <img src="./assets/images/groceries/Pasta 1KG.png" alt="Pasta 1KG" class="image-1 product-img">
+                            <img src="./assets/images/groceries/Pasta 100gm.png" alt="Pasta 100gm" class="image-4 product-img">
                         </div>
-                        <h3 class="fs-6 fw-bold">PASTA</h3>
-                        <p class="text-secondary">90gm & 1kg</p>
+                        <h3 class="fs-6 fw-bold">TRISHNA PASTA</h3>
+                        <p class="text-secondary">100g & 1kg</p>
                     </div>
-                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center">
+                    <!-- Matar Besan -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="groceries">
                         <div class="podium position-relative">
                             <img src="./assets/images/podium.png" alt="podium" class="img-fluid podium-img">
-                            <img src="./assets/images/imageProducts/Matar Besan.png" alt="product-1"
-                                class="image-1 product-img">
-                            <img src="./assets/images/imageProducts/Matar Besan 500.png" alt="product-1"
-                                class="image-4 product-img">
+                            <img src="./assets/images/groceries/Matar Besan.png" alt="Matar Besan" class="image-1 product-img">
                         </div>
                         <h3 class="fs-6 fw-bold">MATAR BESAN</h3>
-                        <p class="text-secondary">500g, 200g</p>
+                        <p class="text-secondary">200g & 500g</p>
                     </div>
-                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center">
+                    <!-- Premium Suji -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="groceries">
                         <div class="podium position-relative">
                             <img src="./assets/images/podium.png" alt="podium" class="img-fluid podium-img">
-                            <img src="./assets/images/imageProducts//Suji 1Kg.png" alt="product-1"
-                                class="image-1 product-img">
-                            <img src="./assets/images/imageProducts/Suji 200 gm.png" alt="product-1"
-                                class="image-4 product-img">
+                            <img src="./assets/images/groceries/Suji 1Kg.png" alt="Suji 1Kg" class="image-1 product-img">
                         </div>
                         <h3 class="fs-6 fw-bold">PREMIUM SUJI</h3>
-                        <p class="text-secondary">150gm, 200gm & 500gm</p>
+                        <p class="text-secondary">200g, 500g & 1kg</p>
                     </div>
-                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center">
+                    <!-- 3D Papad -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="groceries">
                         <div class="podium position-relative">
                             <img src="./assets/images/podium 2.png" alt="podium" class="img-fluid podium-img">
-                            <img src="./assets/images/imageProducts/3D Papad.png" alt="product-1"
-                                class="image-5 product-img">
-
+                            <img src="./assets/images/groceries/3D Papad.png" alt="3D Papad" class="image-5 product-img">
                         </div>
                         <h3 class="fs-6 fw-bold">3D PAPAD</h3>
-                        <p class="text-secondary">1Kg</p>
+                        <p class="text-secondary">1kg</p>
                     </div>
-                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center">
+                    <!-- Vermicelli -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="groceries">
                         <div class="podium position-relative">
                             <img src="./assets/images/podium 2.png" alt="podium" class="img-fluid podium-img">
-                            <img src="./assets/images/imageProducts/Vermicili 100 gm.png" alt="product-1"
-                                class="image-5 product-img">
+                            <img src="./assets/images/groceries/Vermicili 100 gm.png" alt="Vermicili 100 gm" class="image-5 product-img">
                         </div>
                         <h3 class="fs-6 fw-bold">VERMICELLI</h3>
                         <p class="text-secondary">100g</p>
                     </div>
-                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center">
+                    <!-- Maida -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="groceries">
                         <div class="podium position-relative">
                             <img src="./assets/images/podium 2.png" alt="podium" class="img-fluid podium-img">
-                            <img src="./assets/images/imageProducts/Maida.png" alt="product-1"
-                                class="image-5 product-img">
+                            <img src="./assets/images/groceries/Maida.png" alt="Maida" class="image-5 product-img">
                         </div>
                         <h3 class="fs-6 fw-bold">MAIDA</h3>
-                        <p class="text-secondary">1Kg</p>
+                        <p class="text-secondary">1kg</p>
+                    </div>
+                    <!-- Trishna Atta -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="groceries">
+                        <div class="podium position-relative">
+                            <img src="./assets/images/podium 2.png" alt="podium" class="img-fluid podium-img">
+                            <img src="./assets/images/groceries/ATTS Mockup_1KG_1A.png" alt="Trishna Atta" class="image-5 product-img">
+                        </div>
+                        <h3 class="fs-6 fw-bold">TRISHNA ATTA</h3>
+                        <p class="text-secondary">1kg</p>
+                    </div>
+
+                    <!-- ================= SNACKS ================= -->
+                    <!-- Jhal Chanachur -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="snacks">
+                        <div class="podium position-relative">
+                            <img src="./assets/images/podium.png" alt="podium" class="img-fluid podium-img">
+                            <img src="./assets/images/snacks/2 packet Jhal Chanachur_200gm-01.png" alt="Jhal Chanachur 01" class="image-1 product-img">
+                            <img src="./assets/images/snacks/2 packet Jhal Chanachur_200gm-04.png" alt="Jhal Chanachur 04" class="image-4 product-img">
+                        </div>
+                        <h3 class="fs-6 fw-bold">JHAL CHANACHUR</h3>
+                        <p class="text-secondary">200g</p>
+                    </div>
+                    <!-- Biriyani Chanachur -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="snacks">
+                        <div class="podium position-relative">
+                            <img src="./assets/images/podium 2.png" alt="podium" class="img-fluid podium-img">
+                            <img src="./assets/images/snacks/Biriyani Chanachur_Chanachur_200gm-01.png" alt="Biriyani Chanachur" class="image-5 product-img">
+                        </div>
+                        <h3 class="fs-6 fw-bold">BIRIYANI CHANACHUR</h3>
+                        <p class="text-secondary">200g</p>
+                    </div>
+                    <!-- Chatpata Chanachur -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="snacks">
+                        <div class="podium position-relative">
+                            <img src="./assets/images/podium 2.png" alt="podium" class="img-fluid podium-img">
+                            <img src="./assets/images/snacks/Chatpata Chanachur_Chanachur_200gm-01.png" alt="Chatpata Chanachur" class="image-5 product-img">
+                        </div>
+                        <h3 class="fs-6 fw-bold">CHATPATA CHANACHUR</h3>
+                        <p class="text-secondary">200g</p>
+                    </div>
+                    <!-- Dilkhus Chanachur -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="snacks">
+                        <div class="podium position-relative">
+                            <img src="./assets/images/podium 2.png" alt="podium" class="img-fluid podium-img">
+                            <img src="./assets/images/snacks/Dilkhus Chanachur_200gm-01.png" alt="Dilkhus Chanachur" class="image-5 product-img">
+                        </div>
+                        <h3 class="fs-6 fw-bold">DILKHUS CHANACHUR</h3>
+                        <p class="text-secondary">200g</p>
+                    </div>
+                    <!-- Jhal Matar -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="snacks">
+                        <div class="podium position-relative">
+                            <img src="./assets/images/podium 2.png" alt="podium" class="img-fluid podium-img">
+                            <img src="./assets/images/snacks/Jhal matar_200gm-01.png" alt="Jhal Matar" class="image-5 product-img">
+                        </div>
+                        <h3 class="fs-6 fw-bold">JHAL MATAR</h3>
+                        <p class="text-secondary">200g</p>
+                    </div>
+                    <!-- Jhuri Badam -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="snacks">
+                        <div class="podium position-relative">
+                            <img src="./assets/images/podium 2.png" alt="podium" class="img-fluid podium-img">
+                            <img src="./assets/images/snacks/Jhuri Badam_200gm-01.png" alt="Jhuri Badam" class="image-5 product-img">
+                        </div>
+                        <h3 class="fs-6 fw-bold">JHURI BADAM</h3>
+                        <p class="text-secondary">200g</p>
+                    </div>
+                    <!-- Jhuri Bhaja -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="snacks">
+                        <div class="podium position-relative">
+                            <img src="./assets/images/podium 2.png" alt="podium" class="img-fluid podium-img">
+                            <img src="./assets/images/snacks/Jhuri Bhaja_200gm-01.png" alt="Jhuri Bhaja" class="image-5 product-img">
+                        </div>
+                        <h3 class="fs-6 fw-bold">JHURI BHAJA</h3>
+                        <p class="text-secondary">200g</p>
+                    </div>
+                    <!-- Trishna Chanachur -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="snacks">
+                        <div class="podium position-relative">
+                            <img src="./assets/images/podium 2.png" alt="podium" class="img-fluid podium-img">
+                            <img src="./assets/images/snacks/MOCKUP_3.png" alt="Trishna Chanachur" class="image-5 product-img">
+                        </div>
+                        <h3 class="fs-6 fw-bold">TRISHNA CHANACHUR</h3>
+                        <p class="text-secondary">200g</p>
+                    </div>
+                    <!-- Masala Chira / Polau Chira -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="snacks">
+                        <div class="podium position-relative">
+                            <img src="./assets/images/podium.png" alt="podium" class="img-fluid podium-img">
+                            <img src="./assets/images/snacks/Masala Chira- Polau Chira_RS 5-01.png" alt="Masala Chira 01" class="image-1 product-img">
+                            <img src="./assets/images/snacks/Masala Chira- Polau Chira_RS 5-03.png" alt="Masala Chira 03" class="image-4 product-img">
+                        </div>
+                        <h3 class="fs-6 fw-bold">MASALA CHIRA & POLAU CHIRA</h3>
+                        <p class="text-secondary">Rs. 5 Pack</p>
+                    </div>
+                    <!-- Moglai Chanachur -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="snacks">
+                        <div class="podium position-relative">
+                            <img src="./assets/images/podium 2.png" alt="podium" class="img-fluid podium-img">
+                            <img src="./assets/images/snacks/Moglai_Chanachur_200gm-01.png" alt="Moglai Chanachur" class="image-5 product-img">
+                        </div>
+                        <h3 class="fs-6 fw-bold">MOGLAI CHANACHUR</h3>
+                        <p class="text-secondary">200g</p>
+                    </div>
+                    <!-- Mouchak Chanachur -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="snacks">
+                        <div class="podium position-relative">
+                            <img src="./assets/images/podium 2.png" alt="podium" class="img-fluid podium-img">
+                            <img src="./assets/images/snacks/Mouchak Chanachur_200gm-01.png" alt="Mouchak Chanachur" class="image-5 product-img">
+                        </div>
+                        <h3 class="fs-6 fw-bold">MOUCHAK CHANACHUR</h3>
+                        <p class="text-secondary">200g</p>
+                    </div>
+                    <!-- Roasted Chola -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="snacks">
+                        <div class="podium position-relative">
+                            <img src="./assets/images/podium 2.png" alt="podium" class="img-fluid podium-img">
+                            <img src="./assets/images/snacks/Roasted Chola_200gm-01.png" alt="Roasted Chola" class="image-5 product-img">
+                        </div>
+                        <h3 class="fs-6 fw-bold">ROASTED CHOLA</h3>
+                        <p class="text-secondary">200g</p>
+                    </div>
+                    <!-- Salty Chanachur -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="snacks">
+                        <div class="podium position-relative">
+                            <img src="./assets/images/podium 2.png" alt="podium" class="img-fluid podium-img">
+                            <img src="./assets/images/snacks/Salty_Chanachur_200gm.png" alt="Salty Chanachur" class="image-5 product-img">
+                        </div>
+                        <h3 class="fs-6 fw-bold">SALTY CHANACHUR</h3>
+                        <p class="text-secondary">200g</p>
+                    </div>
+                    <!-- Tok Jhal Chanachur -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="snacks">
+                        <div class="podium position-relative">
+                            <img src="./assets/images/podium 2.png" alt="podium" class="img-fluid podium-img">
+                            <img src="./assets/images/snacks/Tok Jhal Chanachur_Chanachur_200gm-01.png" alt="Tok Jhal Chanachur" class="image-5 product-img">
+                        </div>
+                        <h3 class="fs-6 fw-bold">TOK JHAL CHANACHUR</h3>
+                        <p class="text-secondary">200g</p>
+                    </div>
+                    <!-- Tok Jhal Misti Chanachur -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="snacks">
+                        <div class="podium position-relative">
+                            <img src="./assets/images/podium 2.png" alt="podium" class="img-fluid podium-img">
+                            <img src="./assets/images/snacks/Tok Jhal misti Chanachur_Chanachur_200gm-01.png" alt="Tok Jhal Misti Chanachur" class="image-5 product-img">
+                        </div>
+                        <h3 class="fs-6 fw-bold">TOK JHAL MISTI CHANACHUR</h3>
+                        <p class="text-secondary">200g</p>
+                    </div>
+
+                    <!-- ================= EDIBLE OIL ================= -->
+                    <!-- Mustard Oil Jar -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="edible-oil">
+                        <div class="podium position-relative">
+                            <img src="./assets/images/podium.png" alt="podium" class="img-fluid podium-img">
+                            <img src="./assets/images/edible oil/Jar Label_Mustard-01.png" alt="Jar Label 01" class="image-1 product-img">
+                            <img src="./assets/images/edible oil/Jar Label_Mustard-02.png" alt="Jar Label 02" class="image-4 product-img">
+                            <img src="./assets/images/edible oil/Option_4.png" alt="Option 4" class="image-3 product-img">
+                        </div>
+                        <h3 class="fs-6 fw-bold">PREMIUM MUSTARD OIL (JAR)</h3>
+                        <p class="text-secondary">1L, 2L & 5L</p>
+                    </div>
+                    <!-- Mustard Oil Pouch & Box -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="edible-oil">
+                        <div class="podium position-relative">
+                            <img src="./assets/images/podium.png" alt="podium" class="img-fluid podium-img">
+                            <img src="./assets/images/edible oil/Mockup - Mustard Oil Pouch.png" alt="Mustard Oil Pouch" class="image-1 product-img">
+                            <img src="./assets/images/edible oil/Cartoon Box Mustard Oil Mockup_1.png" alt="Mustard Oil Cartoon Box" class="image-4 product-img">
+                        </div>
+                        <h3 class="fs-6 fw-bold">MUSTARD OIL POUCH & BOX</h3>
+                        <p class="text-secondary">1L Pouch & Box</p>
+                    </div>
+                    <!-- Soyabean Oil -->
+                    <div class="product-item col-md-4 col-sm-6 mb-5 text-center" data-category="edible-oil">
+                        <div class="podium position-relative">
+                            <img src="./assets/images/podium 2.png" alt="podium" class="img-fluid podium-img">
+                            <img src="./assets/images/edible oil/Mockup - SOYABEAN.png" alt="Soyabean Oil Mockup" class="image-5 product-img">
+                        </div>
+                        <h3 class="fs-6 fw-bold">TRISHNA SOYABEAN OIL</h3>
+                        <p class="text-secondary">1L Pouch</p>
                     </div>
                 </div>
+
+                <!-- JavaScript Tab Filtering -->
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const tabBtns = document.querySelectorAll(".tab-btn");
+                        const productItems = document.querySelectorAll(".product-item");
+
+                        tabBtns.forEach(btn => {
+                            btn.addEventListener("click", function () {
+                                // Toggle active state for tab buttons
+                                tabBtns.forEach(b => b.classList.remove("active"));
+                                this.classList.add("active");
+
+                                const filterValue = this.getAttribute("data-filter");
+
+                                productItems.forEach(item => {
+                                    if (filterValue === "all" || item.getAttribute("data-category") === filterValue) {
+                                        item.style.display = "";
+                                        // Force reflow to ensure the scale transition activates
+                                        void item.offsetWidth;
+                                        item.style.opacity = "1";
+                                        item.style.transform = "scale(1)";
+                                        item.style.pointerEvents = "auto";
+                                    } else {
+                                        item.style.opacity = "0";
+                                        item.style.transform = "scale(0.85)";
+                                        item.style.pointerEvents = "none";
+                                        // Wait for transition before hiding to prevent layout jumps
+                                        setTimeout(() => {
+                                            if (item.style.opacity === "0") {
+                                                item.style.display = "none";
+                                            }
+                                        }, 300);
+                                    }
+                                });
+                            });
+                        });
+                    });
+                </script>
             </div>
         </section>
     </main>

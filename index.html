@@ -17,8 +17,18 @@
 
 <body class="font-poppins">
     <header class="d-flex justify-content-between align-items-center py-lg-3 sticky-top bg-white">
-        <a href="index.html" class="px-lg-5 px-lg-3 p-2"><img src="./assets/images/DP logo png-01.png"
-                alt="dipankar-logo" class="brand-logo"></a>
+        <a href="index.html" class="px-lg-5 px-lg-3 p-2">
+            <div class="logo-flip-container brand-logo">
+                <div class="logo-flip-card">
+                    <div class="logo-front">
+                        <img src="./assets/images/DP logo png-01.png" alt="dipankar-logo" class="logo-img">
+                    </div>
+                    <div class="logo-back">
+                        <img src="./assets/images/trishna.png" alt="trishna-logo" class="logo-img">
+                    </div>
+                </div>
+            </div>
+        </a>
         <nav>
             <ul
                 class="sub-nav list-unstyled d-flex mb-2 px-lg-5 px-md-4 px-2 align-items-center justify-content-end m-0">
@@ -43,6 +53,7 @@
         </nav>
 
     </header>
+    <!--
     <section class="hero animate__animated animate__fadeInDown">
         <div class="row container-fluid mx-auto">
             <div class="col-md-6 d-md-block d-none">
@@ -55,7 +66,71 @@
                     Freshness You Desire!</p>
             </div>
         </div>
-        <!-- <img src="./assets/images/banner.png" alt="banner" class="img-fluid"> -->
+    </section> 
+    -->
+    <!-- Hero Banner Carousel -->
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+                <img src="./assets/images/banner/BANNER 1 WITH TEXT.webp" class="d-block w-100" alt="Hero Banner 1">
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="./assets/images/banner/BANNER 2.webp" class="d-block w-100" alt="Hero Banner 2">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div> 
+    <section class="product-category py-5 text-center">
+        <div class="container">
+            <h2 class="fw-bolder fs-1 mb-2 section-title">PRODUCT CATEGORY</h2>
+            <div class="category-divider-container d-flex align-items-center justify-content-center my-4">
+                <div class="category-divider-line"></div>
+                <div class="category-divider-ornament mx-3">
+                    <svg width="60" height="20" viewBox="0 0 60 20" fill="currentColor">
+                        <path d="M30 3 L37 10 L30 17 L23 10 Z M18 10 L21 7 L18 4 L15 7 Z M42 10 L45 7 L42 4 L39 7 Z" />
+                        <circle cx="9" cy="10" r="2" />
+                        <circle cx="51" cy="10" r="2" />
+                    </svg>
+                </div>
+                <div class="category-divider-line"></div>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="category-card">
+                        <div class="category-icon-wrapper">
+                            <img src="./assets/images/category/grocery.png" alt="GROCERY" class="category-icon">
+                        </div>
+                        <h3 class="category-label">GROCERY</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="category-card">
+                        <div class="category-icon-wrapper">
+                            <img src="./assets/images/category/snacks & namkeen.png" alt="SNACKS & NAMKEEN" class="category-icon">
+                        </div>
+                        <h3 class="category-label">SNACKS & NAMKEEN</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="category-card">
+                        <div class="category-icon-wrapper">
+                            <img src="./assets/images/category/edible oil.png" alt="COOKING OIL" class="category-icon">
+                        </div>
+                        <h3 class="category-label">COOKING OIL</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="products-all.html" class="text-capitalize d-inline-block category-view-all">view all</a>
+            </div>
+        </div>
     </section>
     <section class="best-selling-products py-5 text-center">
         <h2 class="fw-bolder fs-1 mb-4">BEST SELLING PRODUCTS</h2>
@@ -90,6 +165,7 @@
             <a href="products.html" class="text-capitalize my-3 d-inline-block">view all</a>
         </div>
     </section>
+   
     <section class="about-us">
         <div class="container">
             <div class="row align-items-center my-4">
@@ -108,6 +184,41 @@
                 </div>
             </div>
 
+        </div>
+    </section>
+    <!-- Short Banners Carousel -->
+    <section class="short-banners py-4 bg-white">
+        <div class="container-fluid p-0">
+            <div id="shortBannersCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3500">
+                        <img src="./assets/images/short-banner/1.webp" class="d-block w-100" alt="Short Banner 1">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3500">
+                        <img src="./assets/images/short-banner/2.webp" class="d-block w-100" alt="Short Banner 2">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3500">
+                        <img src="./assets/images/short-banner/3.webp" class="d-block w-100" alt="Short Banner 3">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3500">
+                        <img src="./assets/images/short-banner/4.webp" class="d-block w-100" alt="Short Banner 4">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3500">
+                        <img src="./assets/images/short-banner/5.webp" class="d-block w-100" alt="Short Banner 5">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3500">
+                        <img src="./assets/images/short-banner/6.webp" class="d-block w-100" alt="Short Banner 6">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#shortBannersCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#shortBannersCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
     </section>
     <section class="many-more">
